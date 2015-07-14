@@ -1,0 +1,83 @@
+body
+{
+	background-color: white;
+}
+
+div#container
+{
+	position: absolute;
+	left: 0%;
+	margin-top: 2%;
+	
+	width: 100%;
+	height: 100%;
+	
+	background-color: #006699;
+}
+
+div#registration 
+{
+	position: absolute;
+	top: 20%;
+	left: 30%;
+	
+	width: 800px;
+	height: 370px;
+	
+	background-color: white;
+	border-radius: 1em;
+	padding: 12px;
+}
+
+div#registration  h1
+{
+	color: #000066;
+}
+
+span#line
+{
+	position: absolute;
+	top: 20%;
+	left: 0%;
+	
+	width: 100%;
+	height: 1px;
+	
+	background-color: blue;
+}
+
+.focus_input::-webkit-input-placeholder 
+{
+	color: #D8D8D8;
+}
+
+::-webkit-input-placeholder 
+{
+   color: #A8A8A8;
+}
+
+.border_input
+{
+	border: 3px solid #C1E0FF;
+	box-shadow: 10px 10px 5px #B0B0B0;
+}
+
+input[type='text']
+{
+	margin-top: 4%;
+	margin-left: 30%;
+	display: block;
+	
+	line-height: 20px;
+}
+
+input[type='submit']
+{
+	margin-top: 4%;
+	margin-left: 40%;
+	
+	background-color: #0099CC;
+	color: white;
+	
+	font-size: 20px;
+}

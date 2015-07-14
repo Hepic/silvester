@@ -1,0 +1,23 @@
+mysql_query("CREATE TABLE accounts(
+	id INT NOT NULL AUTO_INCREMENT,
+	PRIMARY KEY(id),
+	alias VARCHAR(100),
+	email VARCHAR(100),
+	password VARCHAR(100))") or die(mysql_error());
+
+
+mysql_query("CREATE TABLE posts(
+		id INT NOT NULL AUTO_INCREMENT,
+		PRIMARY KEY(id),
+		userid INT,
+		username VARCHAR(100),
+		message TEXT)") or die(mysql_error());
+
+mysql_query("CREATE TABLE comments(
+		id INT NOT NULL AUTO_INCREMENT,
+		PRIMARY KEY(id),
+		userid INT,
+		postid INT,
+		username VARCHAR(100),
+		message TEXT)") or die(mysql_error());
+	
